@@ -36,7 +36,7 @@ variable "node_group_name" {
 }
 
 variable "node_group_private_subnet_ids" {
-  type        = list(any)
+  type        = list
   description = "a list containing the ids for the private subnets create by vpc module"
 }
 
