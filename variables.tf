@@ -38,6 +38,7 @@ variable "node_group_name" {
 variable "node_group_private_subnet_ids" {
   type        = list
   description = "a list containing the ids for the private subnets create by vpc module"
+  default = []
 }
 
 variable "worker_nodes_desired_size" {
