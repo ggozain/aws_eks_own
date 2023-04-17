@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = var.tfcloud_organization
+    organization = "gozain-lab"
     workspaces {
       name = "aws_eks"
     }
