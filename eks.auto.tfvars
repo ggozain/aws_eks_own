@@ -38,4 +38,4 @@ force_update_version = false
 capacity_type = "ON_DEMAND"
 
 # List of instance types associated with the EKS Node Group
-workerworker_node_instance_type = ["t3.small"]
+worker_node_instance_type = ["t3.small"]
