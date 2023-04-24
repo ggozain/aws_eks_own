@@ -7,7 +7,7 @@ tfcloud_workspace    = "aws_vpc"
 
 //EKS configuration
 eks_kubernetes_version      = "1.23"
-eks_cluster_iam_role_name   = "eks-cluster"
+eks_cluster_iam_role_name   = "eks-cluster"  //MUST match the k8s labels created for the subnets in vpc/module (i.e. "kubernetes.io/cluster/eks" where <eks> is the cluster name)
 nodes_general_iam_role_name = "nodes_general"
 eks_cluster_name            = "eks_cluster_1"
 node_group_name             = "node-group-1"
@@ -16,7 +16,7 @@ node_group_name             = "node-group-1"
 worker_nodes_desired_size = 1
 
 # Maximum number of worker nodes.
-worker_nodes_max_size = 6
+worker_nodes_max_size = 3
 
 # Minimum number of worker nodes.
 worker_nodes_min_size = 1
